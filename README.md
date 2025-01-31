@@ -1,24 +1,74 @@
-# Replication package of Understanding Abandonment and Slowdown Dynamics in the Maven Ecosystem
+# Replication Package: Understanding Abandonment and Slowdown Dynamics in the Maven Ecosystem
+
+**Authors**: Kazi Amit Hasan, Jerin Yasmin, Huizi Hao, Yuan Tian, Safwat Hassan, Steven Ding
+
+## Overview
+This repository contains all artifacts required to replicate our study investigating abandonment patterns and  slowdowns in the Maven ecosystem. The package includes processed datasets, analysis scripts, and query documentation.
+
+## Repository Structure
+```
+.
+├── Data/
+│   ├── data.zip           # Compressed analysis-ready dataset
+│   └── queries.md         # Neo4j Cypher queries for raw data extraction
+├── RQ1/
+│   └── rq1.ipynb          # Jupyter notebook for RQ 1
+├── RQ2/
+│   ├── rq2_quartile_v1_ab_std.ipynb      
+│   ├── rq2_quartile_v1_active_std.ipynb   
+│   ├── rq2_speed_x_lifespan_active/       
+│   └── rq2_speed_x_lifespan_abandoned/   
+├── requirements.txt       # Python package dependencies
+└── README.md             
+```
+
+## Requirements
+- Python 3.10+
+- Jupyter Notebook
+- 7-Zip or equivalent for data extraction
+- Neo4j 4.4.11 (optional, only for raw data re-extraction)
+
+## Setup Instructions
+1. **Download Data**:  
+   Get `data.zip` from [Google Drive](https://drive.google.com/drive/folders/1AJLes5f-SSUgTGcQt4Kfg6peYRpBtF1R)
+
+2. **Extract Data**:  
+   Unzip contents to `Data/` folder:
+   ```bash
+   unzip data.zip -d ./Data
+   ```
+
+3. **Install Dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Replication Steps
+1. **Research Question 1**:
+   - Execute `RQ1/rq1.ipynb`  
+
+2. **Research Question 2**:
+   - **RQ2.1**:
+     - Active libraries: `RQ2/rq2_speed_x_lifespan_active/`
+     - Abandoned libraries: `RQ2/rq2_speed_x_lifespan_abandoned/`
+   
+   - **RQ2.2**:
+     - Active libraries: `RQ2/rq2_quartile_v1_active_std.ipynb`
+     - Abandoned libraries: `RQ2/rq2_quartile_v1_ab_std.ipynb`
+
+## Contact
+For technical assistance or data inquiries:  
+Kazi Amit Hasan: `[kaziamit.hasan@queensu.ca]`  
 
 
-## Anonymous Authors, Anonymous MSR25 mining challenge submission
+<!-- ## Citation
+```bibtex
+@article{hasan2024maven,
+  title={Understanding Abandonment and Slowdown Dynamics in the Maven Ecosystem},
+  author={Hasan, Kazi Amit and Yasmin, Jerin and Hao, Huizi and Tian, Yuan and Hassan, Safwat and Ding, Steven},
+  journal={[Journal Name]},
+  year={2024},
+  publisher={[Publisher]}
+}
+``` -->
 
-
-
-#### Folders 
-
-1. data.zip: contains the processed dataset. 
-2. queries.md : contains the codes to extract dataset from neo4j
-3. rq1.ipynb: contains the code of rq1
-4. rq2_quartile_v1_ab_std.ipynb: contains the code to replicate the results for rq2.2 (abandoned libraries)
-5. rq2_quartile_v1_active_std.ipynb: contains the code to replicate the results for rq2.2 (active libraries)
-6. rq2_speed_x_lifespan_active & abanded: both contains the code to replicate the results for rq 2.1
-
-
-
-#### How to run
-1. Download the data and code
-2. Unzip the data
-3. Install the requirments mentioned in requirement.txt
-4. Open the ipynb files, replace the data location with your data path. 
-5. Run the code.
