@@ -43,19 +43,6 @@ This repository contains all artifacts required to replicate our study investiga
    pip install -r requirements.txt
    ```
 
-## Replication Steps
-1. **Research Question 1**:
-   - Execute `RQ1/rq1.ipynb`  
-
-2. **Research Question 2**:
-   - **RQ2.1**:
-     - Active libraries: `RQ2/rq2_speed_x_lifespan_active/`
-     - Abandoned libraries: `RQ2/rq2_speed_x_lifespan_abandoned/`
-   
-   - **RQ2.2**:
-     - Active libraries: `RQ2/rq2_quartile_v1_active_std.ipynb`
-     - Abandoned libraries: `RQ2/rq2_quartile_v1_ab_std.ipynb`
-
 ## Contact
 For technical assistance or data inquiries:  
 Kazi Amit Hasan: `[kaziamit.hasan@queensu.ca]`  
