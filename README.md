@@ -16,8 +16,8 @@ This repository contains all data and code required to replicate our study inves
 ├── RQ2/
 │   ├── rq2_quartile_v1_ab_std.ipynb      
 │   ├── rq2_quartile_v1_active_std.ipynb   
-│   ├── rq2_speed_x_lifespan_active/       
-│   └── rq2_speed_x_lifespan_abandoned/   
+│   ├── rq2_speed_x_lifespan_active    
+│   └── rq2_speed_x_lifespan_abandoned   
 ├── requirements.txt       # Python package dependencies
 └── README.md             
 ```
