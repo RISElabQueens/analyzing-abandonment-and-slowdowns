@@ -1,9 +1,9 @@
-# Replication Package: Understanding Abandonment and Slowdown Dynamics in the Maven Ecosystem
+# Replication Package: Understanding Abandonment and Slowdown Dynamics in the Maven Ecosystem (MSR 2025)
 
 **Authors**: Kazi Amit Hasan, Jerin Yasmin, Huizi Hao, Yuan Tian, Safwat Hassan, Steven Ding
 
 ## Overview
-This repository contains all artifacts required to replicate our study investigating abandonment patterns and  slowdowns in the Maven ecosystem. The package includes processed datasets, analysis scripts, and query documentation.
+This repository contains all data and code required to replicate our study investigating abandonment patterns and  slowdowns in the Maven ecosystem. 
 
 ## Repository Structure
 ```
